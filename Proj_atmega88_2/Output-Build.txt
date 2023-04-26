@@ -1,0 +1,40 @@
+﻿------ Rebuild All started: Project: Atmega88, Configuration: Debug AVR ------
+Build started.
+Project "Atmega88.asmproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Studio\7.0\Vs\Assembler.targets" from project "C:\Users\sergi\Documents\GitHub 2023\AVR_Atmel\Proj_atmega88_2\Atmega88\Atmega88.asmproj" (entry point):
+	Task "RunAssemblerTask"
+		C:\Program Files (x86)\Atmel\Studio\7.0\shellUtils\rm.exe  -rf "C:\Users\sergi\Documents\GitHub 2023\AVR_Atmel\Proj_atmega88_2\Atmega88\Debug\Atmega88.obj" "C:\Users\sergi\Documents\GitHub 2023\AVR_Atmel\Proj_atmega88_2\Atmega88\Debug\Atmega88.a" "C:\Users\sergi\Documents\GitHub 2023\AVR_Atmel\Proj_atmega88_2\Atmega88\Debug\Atmega88.lss"  "C:\Users\sergi\Documents\GitHub 2023\AVR_Atmel\Proj_atmega88_2\Atmega88\Debug\Atmega88.map"   "C:\Users\sergi\Documents\GitHub 2023\AVR_Atmel\Proj_atmega88_2\Atmega88\Debug\Atmega88.tmp" 
+	Done executing task "RunAssemblerTask".
+Done building target "Clean" in project "Atmega88.asmproj".
+Done building project "Atmega88.asmproj".
+
+Build succeeded.
+------ Rebuild All started: Project: Atmega88, Configuration: Debug AVR ------
+Build started.
+Project "Atmega88.asmproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Studio\7.0\Vs\Assembler.targets" from project "C:\Users\sergi\Documents\GitHub 2023\AVR_Atmel\Proj_atmega88_2\Atmega88\Atmega88.asmproj" (target "Build" depends on it):
+	Task "RunAssemblerTask"
+		C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\avrasm2.exe -fI -o "Atmega88.hex"  -m "Atmega88.map"  -l "Atmega88.lss"  -S "Atmega88.tmp"  -W+ie -I"C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc"  -im88def.inc -d "C:\Users\sergi\Documents\GitHub 2023\AVR_Atmel\Proj_atmega88_2\Atmega88\Debug\Atmega88.obj"  "C:\Users\sergi\Documents\GitHub 2023\AVR_Atmel\Proj_atmega88_2\Atmega88\main.asm"  -I "C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include" 
+		AVRASM: AVR macro assembler 2.2.8 (build 80 Jan 14 2020 18:27:50)
+		Copyright (C) 1995-2020 ATMEL Corporation
+		[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\m88def.inc'
+		C:\Users\sergi\Documents\GitHub 2023\AVR_Atmel\Proj_atmega88_2\Atmega88\main.asm(11): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\M88DEF.INC'
+		[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\m88def.inc'
+		C:\Users\sergi\Documents\GitHub 2023\AVR_Atmel\Proj_atmega88_2\Atmega88\main.asm(11): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\M88DEF.INC'
+		"ATmega88" memory use summary [bytes]:
+		Segment   Begin    End      Code   Data   Used    Size   Use%
+		---------------------------------------------------------------
+		[.cseg] 0x000000 0x0003f6    144      0    144    8192   1.8%
+		[.dseg] 0x000100 0x000100      0      0      0    1024   0.0%
+		[.eseg] 0x000000 0x000000      0      0      0     512   0.0%
+		Assembly complete, 0 errors. 0 warnings
+	Done executing task "RunAssemblerTask".
+Done building target "CoreBuild" in project "Atmega88.asmproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Studio\7.0\Vs\Avr.common.targets" from project "C:\Users\sergi\Documents\GitHub 2023\AVR_Atmel\Proj_atmega88_2\Atmega88\Atmega88.asmproj" (entry point):
+Done building target "Build" in project "Atmega88.asmproj".
+Done building project "Atmega88.asmproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
