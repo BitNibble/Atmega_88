@@ -11,13 +11,6 @@ Comment:
 #ifndef _74HC595_H_
 	#define _74HC595_H_
 
-/*** Compiler ***/
-
-/*** Working Frequency ***/
-#ifndef F_CPU
-	#define F_CPU 8000000UL
-#endif
-
 /*** Global Library ***/
 #include <inttypes.h>
 
