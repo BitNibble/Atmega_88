@@ -32,33 +32,33 @@ int main(void)
     {
 		for(i=0;i<8;i++){
 			_delay_ms(100);
-			shift.bit(1);
-			shift.out();
+			shift.bit(&shift.par, 1);
+			shift.out(&shift.par);
 		}
 		for(i=0;i<8;i++){
 			_delay_ms(100);
-			shift.bit(0);
-			shift.out();
+			shift.bit(&shift.par, 0);
+			shift.out(&shift.par);
 		}
 		_delay_ms(1000);
-		shift.byte(3);
+		shift.byte(&shift.par, 3);
 		_delay_ms(1000);
-		shift.byte(12);
+		shift.byte(&shift.par, 12);
 		_delay_ms(1000);
-		shift.byte(48);
+		shift.byte(&shift.par, 48);
 		_delay_ms(1000);
-		shift.byte(192);
+		shift.byte(&shift.par, 192);
 		_delay_ms(1000);
-		shift.byte(48);
+		shift.byte(&shift.par, 48);
 		_delay_ms(1000);
-		shift.byte(12);
+		shift.byte(&shift.par, 12);
 		_delay_ms(1000);
-		shift.byte(3);
+		shift.byte(&shift.par, 3);
 		_delay_ms(1000);
-		shift.byte(24);
+		shift.byte(&shift.par, 24);
 		_delay_ms(1000);
 		for(i=0;i<255;i++){
-			shift.byte(i);
+			shift.byte(&shift.par, i);
 			_delay_ms(50);
 		}
 		
